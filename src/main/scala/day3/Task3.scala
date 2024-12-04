@@ -15,12 +15,12 @@ def day3(): Unit =
 
   val nums1 = solveWithRegex(s)
   println(nums1)
-  println(nums1.sum) // 162813399
+  println(nums1.sum)
 
   val num2 = solveWithIter(s)
   println(num2)
-  println(num2.sum) // sample 161 // input 162813399
-  println(solveWithIter(s, true).sum) // sample 48 // 53784220 is too high 
+  println(num2.sum)
+  println(solveWithIter(s, true).sum)
 
 def solveWithRegex(s: String): List[Int] =
   val r = "mul\\((\\d{1,3}),(\\d{1,3})\\)".r

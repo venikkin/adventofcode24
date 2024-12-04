@@ -8,10 +8,10 @@ import scala.util.boundary.break
 @main def day2(): Unit =
   val m = readMatrix("input/input2.txt")
   val safeNum = m.count(x => isSafe(x))
-  println(s"Safe: $safeNum") // 680
+  println(s"Safe: $safeNum") 
 
   val almostSafeNum = m.count(x => isSafe(x, 1))
-  println(s"Almost safe: $almostSafeNum") // 710
+  println(s"Almost safe: $almostSafeNum") 
 
 def readMatrix(file: String): Seq[Seq[Int]] =
   Using(Source.fromFile(file)) { f =>
